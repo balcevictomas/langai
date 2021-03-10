@@ -84,14 +84,18 @@ $(document).ready(function()
     
     var action = 'data';
     var width = get_filter_text("width");
-    var width = $('form').serialize();
-    console.log(width);
+    
+    //var width = $('width').serialize();
+    
+   
     $.ajax(
       {
           
           url:'action.php',
           method:'POST',
+          
           data:{action:action, width:width},
+          
           success:function(response)
           {
             $("#filtras").html(response);
@@ -110,14 +114,15 @@ $(document).ready(function()
     {
       filterData.push($(this).val());
       
+     
+     
+       console.log(filterData);
       return filterData;
-
+     
 
     });
   }
 }
-
-
 );
 </script>
 
