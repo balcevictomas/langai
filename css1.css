@@ -1,0 +1,19 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+.carousel-inner > .carousel-item > img { 
+  height: 80vh; }
+
+  
+ #durysid
+ {
+   padding-top: 70px;
+ }
+  @media (min-width: 992px)
+  {
+#a1 { 
+  margin-left: 3rem;
+}
+  
+}
